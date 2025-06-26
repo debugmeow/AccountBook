@@ -78,7 +78,7 @@ public class EntryDao {
     */
 
     public boolean deleteEntry(int id) {
-        String sql = "DELECT FROM entries WHERE id = ?";
+        String sql = "DELETE FROM entries WHERE id = ?";
 
         try(Connection conn = DBUtil.getConnection();
             PreparedStatement pstmt = conn.prepareStatement(sql)) {
